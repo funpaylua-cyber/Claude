@@ -22,8 +22,7 @@ const courses: Course[] = [
   {
     id: 1,
     title: 'Перша бісерна сумочка',
-    description:
-      'Ідеальний старт для тих, хто ніколи не тримав голку з бісером. Крок за кроком від нуля до готового клатчу.',
+    description: 'Ідеальний старт для тих, хто ніколи не тримав голку з бісером. Крок за кроком від нуля до готового клатчу.',
     level: 'Початковий',
     duration: '3–4 години',
     format: 'Онлайн або офлайн',
@@ -33,42 +32,40 @@ const courses: Course[] = [
       'Кріплення замка та ланцюжка',
       'Оздоблення та фінішинг',
     ],
-    image: ‘/images/course-beginner.jpg’,
+    image: '/images/course-beginner.jpg',
     price: 500,
     isPopular: true,
   },
   {
     id: 2,
-    title: ‘Складні форми та орнаменти’,
-    description:
-      "Для тих, хто вже вміє основи. Вчимося створювати об’ємні форми, геометричні візерунки та власні орнаменти.",
-    level: ‘Середній’,
-    duration: ‘5–6 годин’,
-    format: ‘Онлайн або офлайн’,
+    title: 'Складні форми та орнаменти',
+    description: "Для тих, хто вже вміє основи. Вчимося створювати об'ємні форми, геометричні візерунки та власні орнаменти.",
+    level: 'Середній',
+    duration: '5–6 годин',
+    format: 'Онлайн або офлайн',
     topics: [
-      "Об’ємне плетіння",
-      ‘Геометричні та квіткові орнаменти’,
-      ‘Комбінування кольорів’,
-      ‘Підкладка та конструкція сумки’,
+      "Об'ємне плетіння",
+      'Геометричні та квіткові орнаменти',
+      'Комбінування кольорів',
+      'Підкладка та конструкція сумки',
     ],
-    image: ‘/images/course-intermediate.jpg’,
+    image: '/images/course-intermediate.jpg',
     price: 1000,
   },
   {
     id: 3,
-    title: ‘Авторський дизайн від А до Я’,
-    description:
-      ‘Повний курс для тих, хто хоче навчитися самостійно розробляти та продавати власні вироби.’,
-    level: ‘Просунутий’,
-    duration: ‘10–12 годин’,
-    format: ‘Індивідуально або в групі’,
+    title: 'Авторський дизайн від А до Я',
+    description: 'Повний курс для тих, хто хоче навчитися самостійно розробляти та продавати власні вироби.',
+    level: 'Просунутий',
+    duration: '10–12 годин',
+    format: 'Індивідуально або в групі',
     topics: [
-      ‘Розробка власного ескізу’,
-      ‘Складні техніки: фріформ, мозаїка’,
-      ‘Ціноутворення та продаж’,
-      ‘Створення власного бренду’,
+      'Розробка власного ескізу',
+      'Складні техніки: фріформ, мозаїка',
+      'Ціноутворення та продаж',
+      'Створення власного бренду',
     ],
-    image: ‘/images/course-advanced.jpg’,
+    image: '/images/course-advanced.jpg',
     price: 1500,
   },
 ];
@@ -148,7 +145,6 @@ export default function CoursesSection() {
             >
               {/* Image area */}
               <div className="relative aspect-[4/3] overflow-hidden">
-                {/* Placeholder gradient — replace with real course photo */}
                 <div
                   className="absolute inset-0 image-placeholder"
                   style={{
@@ -161,14 +157,12 @@ export default function CoursesSection() {
                   }}
                 />
 
-                {/* Play icon overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-400">
                   <div className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-pearl-lg">
                     <Play size={20} style={{ color: 'var(--pearl-gold)' }} fill="currentColor" />
                   </div>
                 </div>
 
-                {/* Popular badge */}
                 {course.isPopular && (
                   <div className="absolute top-3 left-3">
                     <span
@@ -184,7 +178,6 @@ export default function CoursesSection() {
                   </div>
                 )}
 
-                {/* Level badge */}
                 <div className="absolute top-3 right-3">
                   <span
                     className="font-body text-xs px-3 py-1 rounded-full border backdrop-blur-sm"
