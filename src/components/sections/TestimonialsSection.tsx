@@ -2,8 +2,8 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Star, Instagram } from 'lucide-react';
-import { siteConfig } from '@/config/site';
+import { Star } from 'lucide-react';
+import ReviewForm from '@/components/ui/ReviewForm';
 
 interface Testimonial {
   id: number;
@@ -136,34 +136,21 @@ export default function TestimonialsSection() {
           ))}
         </div>
 
-        {/* CTA to leave review */}
+        {/* Review form */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-center p-8 rounded-2xl border border-dashed"
-          style={{ borderColor: 'rgba(201,169,110,0.3)', background: 'rgba(201,169,110,0.04)' }}
+          className="max-w-lg mx-auto p-8 rounded-2xl border"
+          style={{ borderColor: 'rgba(201,169,110,0.25)', background: 'rgba(255,255,255,0.7)' }}
         >
-          <p className="font-display text-xl font-light text-pearl-950 mb-2 italic">
-            Вже маєте нашу сумочку?
+          <p className="font-display text-2xl font-light text-pearl-950 mb-1 italic text-center">
+            Залишити відгук
           </p>
-          <p className="font-body text-sm text-pearl-500 mb-6 leading-relaxed font-light max-w-sm mx-auto">
-            Будемо раді почути вашу думку — залиште відгук в Instagram та отримайте знижку 5% на наступне замовлення.
+          <p className="font-body text-sm text-pearl-400 text-center mb-6">
+            Отримайте знижку 5% на наступне замовлення
           </p>
-          <a
-            href={siteConfig.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 font-body text-xs uppercase tracking-widest px-6 py-3 rounded-full border transition-all duration-300 hover:opacity-80"
-            style={{
-              color: 'var(--pearl-gold)',
-              borderColor: 'rgba(201,169,110,0.4)',
-              letterSpacing: '0.18em',
-            }}
-          >
-            <Instagram size={14} />
-            Залишити відгук в Instagram
-          </a>
+          <ReviewForm />
         </motion.div>
       </div>
     </section>
