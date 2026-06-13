@@ -14,6 +14,7 @@ export interface Course {
   format: string;
   topics: string[];
   image: string;
+  price: number;
   isPopular?: boolean;
 }
 
@@ -32,40 +33,43 @@ const courses: Course[] = [
       'Кріплення замка та ланцюжка',
       'Оздоблення та фінішинг',
     ],
-    image: '/images/course-beginner.jpg',
+    image: ‘/images/course-beginner.jpg’,
+    price: 500,
     isPopular: true,
   },
   {
     id: 2,
-    title: 'Складні форми та орнаменти',
+    title: ‘Складні форми та орнаменти’,
     description:
       "Для тих, хто вже вміє основи. Вчимося створювати об’ємні форми, геометричні візерунки та власні орнаменти.",
-    level: 'Середній',
-    duration: '5–6 годин',
-    format: 'Онлайн або офлайн',
+    level: ‘Середній’,
+    duration: ‘5–6 годин’,
+    format: ‘Онлайн або офлайн’,
     topics: [
       "Об’ємне плетіння",
-      'Геометричні та квіткові орнаменти',
-      'Комбінування кольорів',
-      'Підкладка та конструкція сумки',
+      ‘Геометричні та квіткові орнаменти’,
+      ‘Комбінування кольорів’,
+      ‘Підкладка та конструкція сумки’,
     ],
-    image: '/images/course-intermediate.jpg',
+    image: ‘/images/course-intermediate.jpg’,
+    price: 1000,
   },
   {
     id: 3,
-    title: 'Авторський дизайн від А до Я',
+    title: ‘Авторський дизайн від А до Я’,
     description:
-      'Повний курс для тих, хто хоче навчитися самостійно розробляти та продавати власні вироби.',
-    level: 'Просунутий',
-    duration: '10–12 годин',
-    format: 'Індивідуально або в групі',
+      ‘Повний курс для тих, хто хоче навчитися самостійно розробляти та продавати власні вироби.’,
+    level: ‘Просунутий’,
+    duration: ‘10–12 годин’,
+    format: ‘Індивідуально або в групі’,
     topics: [
-      'Розробка власного ескізу',
-      'Складні техніки: фріформ, мозаїка',
-      'Ціноутворення та продаж',
-      'Створення власного бренду',
+      ‘Розробка власного ескізу’,
+      ‘Складні техніки: фріформ, мозаїка’,
+      ‘Ціноутворення та продаж’,
+      ‘Створення власного бренду’,
     ],
-    image: '/images/course-advanced.jpg',
+    image: ‘/images/course-advanced.jpg’,
+    price: 1500,
   },
 ];
 
@@ -216,6 +220,16 @@ export default function CoursesSection() {
                     <Users size={13} style={{ color: 'var(--pearl-gold)' }} />
                     <span className="font-body text-xs">{course.format}</span>
                   </div>
+                </div>
+
+                {/* Price */}
+                <div className="mb-5">
+                  <span
+                    className="font-display text-3xl font-light"
+                    style={{ color: 'var(--pearl-gold)' }}
+                  >
+                    {course.price.toLocaleString('uk-UA')} ₴
+                  </span>
                 </div>
 
                 {/* Topics */}

@@ -6,7 +6,7 @@ export const siteConfig = {
   url: 'https://pearlboutique.ua', // TODO: replace with actual domain
 
   // Social links — replace with actual handles
-  instagram: 'https://instagram.com/pearl.boutique.ua',
+  instagram: 'https://www.instagram.com/pearl_bouttique?igsh=Yzd1MTVmejczdWhs',
   telegram: 'https://t.me/pearl_boutique_ua',
 
   // Contact — replace with actual details

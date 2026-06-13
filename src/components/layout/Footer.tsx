@@ -98,7 +98,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="font-body text-sm text-pearl-300 hover:text-gold-light transition-colors duration-300"
                 >
-                  @pearl.boutique.ua
+                  @pearl_bouttique
                 </a>
               </div>
               <div>
