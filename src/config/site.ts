@@ -7,7 +7,6 @@ export const siteConfig = {
 
   // Social links — replace with actual handles
   instagram: 'https://www.instagram.com/pearl_bouttique?igsh=Yzd1MTVmejczdWhs',
-  telegram: 'https://t.me/pearl_boutique_ua',
 
   // Contact — replace with actual details
   email: 'hello@pearlboutique.ua',

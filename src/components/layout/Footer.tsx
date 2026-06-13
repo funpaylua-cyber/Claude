@@ -1,4 +1,4 @@
-import { Instagram, Send, Mail } from 'lucide-react';
+import { Instagram, Mail } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 
 export default function Footer() {
@@ -32,15 +32,6 @@ export default function Footer() {
                 aria-label="Instagram Pearl Boutique"
               >
                 <Instagram size={18} />
-              </a>
-              <a
-                href={siteConfig.telegram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-full border border-pearl-700 hover:border-gold-DEFAULT hover:text-gold-DEFAULT text-pearl-400 transition-all duration-300"
-                aria-label="Telegram Pearl Boutique"
-              >
-                <Send size={18} />
               </a>
               <a
                 href={`mailto:${siteConfig.email}`}
@@ -99,19 +90,6 @@ export default function Footer() {
                   className="font-body text-sm text-pearl-300 hover:text-gold-light transition-colors duration-300"
                 >
                   @pearl_bouttique
-                </a>
-              </div>
-              <div>
-                <p className="font-body text-2xs text-pearl-600 uppercase tracking-widest mb-1" style={{ fontSize: '0.6rem' }}>
-                  Telegram
-                </p>
-                <a
-                  href={siteConfig.telegram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-body text-sm text-pearl-300 hover:text-gold-light transition-colors duration-300"
-                >
-                  @pearl_boutique_ua
                 </a>
               </div>
               <div>

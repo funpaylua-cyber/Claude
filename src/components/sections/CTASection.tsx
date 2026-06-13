@@ -117,14 +117,6 @@ export default function CTASection() {
               className="transition-transform duration-300 group-hover:translate-x-1"
             />
           </a>
-          <a
-            href={siteConfig.telegram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-secondary !py-3"
-          >
-            Написати в Telegram
-          </a>
         </motion.div>
 
         {/* Trust signals */}
