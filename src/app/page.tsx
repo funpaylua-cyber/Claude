@@ -4,6 +4,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import AboutSection from '@/components/sections/AboutSection';
 import AdvantagesSection from '@/components/sections/AdvantagesSection';
 import ProductGallery from '@/components/sections/ProductGallery';
+import CoursesSection from '@/components/sections/CoursesSection';
 import CustomOrderSection from '@/components/sections/CustomOrderSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import FAQSection from '@/components/sections/FAQSection';
@@ -18,6 +19,7 @@ export default function Home() {
         <AboutSection />
         <AdvantagesSection />
         <ProductGallery />
+        <CoursesSection />
         <CustomOrderSection />
         <TestimonialsSection />
         <FAQSection />

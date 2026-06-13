@@ -9,6 +9,7 @@ import { siteConfig } from '@/config/site';
 const navLinks = [
   { href: '#about', label: 'Про нас' },
   { href: '#gallery', label: 'Колекція' },
+  { href: '#courses', label: 'Курси' },
   { href: '#order', label: 'Замовити' },
   { href: '#faq', label: 'FAQ' },
 ];

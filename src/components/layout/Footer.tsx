@@ -64,6 +64,7 @@ export default function Footer() {
               {[
                 { href: '#about', label: 'Про нас' },
                 { href: '#gallery', label: 'Колекція' },
+                { href: '#courses', label: 'Курси' },
                 { href: '#order', label: 'Як замовити' },
                 { href: '#faq', label: 'Часті питання' },
               ].map((link) => (
