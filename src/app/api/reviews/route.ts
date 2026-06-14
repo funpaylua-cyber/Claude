@@ -7,10 +7,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
   }
 
-  const formEmail = process.env.FORM_EMAIL;
-  if (!formEmail) {
-    return NextResponse.json({ error: 'Not configured' }, { status: 500 });
-  }
+  const formEmail = process.env.FORM_EMAIL ?? 'olesia.kuleba@icloud.com';
 
   const formData = new FormData();
   formData.append('name', name);
