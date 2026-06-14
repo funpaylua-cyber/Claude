@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Play, Clock, Users, Award, ArrowRight } from 'lucide-react';
+import { Clock, Users, Award, ArrowRight } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 
 export interface Course {
@@ -146,12 +146,6 @@ export default function CoursesSection() {
                     }}
                   />
                 )}
-
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-400">
-                  <div className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-pearl-lg">
-                    <Play size={20} style={{ color: 'var(--pearl-gold)' }} fill="currentColor" />
-                  </div>
-                </div>
 
                 {course.isPopular && (
                   <div className="absolute top-3 left-3">
