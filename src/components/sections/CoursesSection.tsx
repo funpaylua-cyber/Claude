@@ -127,19 +127,25 @@ export default function CoursesSection() {
               }}
               className="group relative flex flex-col rounded-2xl bg-white border border-pearl-200/60 overflow-hidden hover-lift shadow-pearl"
             >
-              {/* Image area */}
+              {/* Image/Video area */}
               <div className="relative aspect-[4/3] overflow-hidden">
-                <div
-                  className="absolute inset-0 image-placeholder"
-                  style={{
-                    background:
-                      i === 0
-                        ? 'linear-gradient(135deg, #F5EFE6 0%, #EDE3D4 60%, #DFC99A 100%)'
-                        : i === 1
-                        ? 'linear-gradient(135deg, #F0E8D8 0%, #E5D9C4 60%, #C9A96E 100%)'
-                        : 'linear-gradient(135deg, #E8DDD0 0%, #D9CAAD 60%, #A88A52 100%)',
-                  }}
-                />
+                {i === 0 ? (
+                  <video
+                    src="/images/course-beginner.mov"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                ) : (
+                  <div
+                    className="absolute inset-0 image-placeholder"
+                    style={{
+                      background: 'linear-gradient(135deg, #F0E8D8 0%, #E5D9C4 60%, #C9A96E 100%)',
+                    }}
+                  />
+                )}
 
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-400">
                   <div className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-pearl-lg">
