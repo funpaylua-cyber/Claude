@@ -9,7 +9,7 @@ export const siteConfig = {
   instagram: 'https://www.instagram.com/pearl_bouttique?igsh=Yzd1MTVmejczdWhs',
 
   // Contact — replace with actual details
-  email: 'hello@pearlboutique.ua',
+  email: 'olesia.kuleba@icloud.com',
   phone: '+38 (0XX) XXX-XX-XX', // TODO: add real phone number
 
   // SEO
