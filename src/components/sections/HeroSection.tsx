@@ -5,8 +5,10 @@ import { ChevronDown } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 import { heroImage } from '@/data/products';
 import BagImage from '@/components/ui/BagImage';
+import { useMediaUrl } from '@/context/MediaConfigContext';
 
 export default function HeroSection() {
+  const currentHero = useMediaUrl('hero', heroImage);
   const scrollToGallery = () => {
     const el = document.getElementById('gallery');
     if (el) {
@@ -19,7 +21,7 @@ export default function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <BagImage
-          src={heroImage}
+          src={currentHero}
           alt="Pearl Boutique — сумки ручної роботи з намистин"
           fill
           priority

@@ -8,6 +8,7 @@ import type { Product } from '@/data/products';
 import BagImage from '@/components/ui/BagImage';
 import LightboxModal from '@/components/ui/LightboxModal';
 import { siteConfig } from '@/config/site';
+import { useMediaConfig } from '@/context/MediaConfigContext';
 
 const aspectRatioClasses: Record<Product['aspectRatio'], string> = {
   tall: 'aspect-[3/4]',
@@ -18,6 +19,7 @@ const aspectRatioClasses: Record<Product['aspectRatio'], string> = {
 export default function ProductGallery() {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: '-80px' });
+  const mediaConfig = useMediaConfig();
 
   const [activeCategory, setActiveCategory] = useState('Усі');
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -133,7 +135,7 @@ export default function ProductGallery() {
                   >
                     {/* Image */}
                     <BagImage
-                      src={product.image}
+                      src={(mediaConfig as Record<string, string>)[product.image.replace('/images/', '').replace(/\.[^.]+$/, '')] || product.image}
                       alt={product.title}
                       fill
                       sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"

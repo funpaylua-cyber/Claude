@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Cormorant_Garamond, Inter } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/config/site';
+import { MediaConfigProvider } from '@/context/MediaConfigContext';
 
 const cormorant = Cormorant_Garamond({
   variable: '--font-cormorant',
@@ -76,7 +77,9 @@ export default function RootLayout({
   return (
     <html lang="uk" className={`${cormorant.variable} ${inter.variable}`}>
       <body className="bg-pearl-50 text-pearl-900 antialiased">
-        {children}
+        <MediaConfigProvider>
+          {children}
+        </MediaConfigProvider>
       </body>
     </html>
   );
