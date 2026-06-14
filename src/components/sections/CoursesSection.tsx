@@ -114,7 +114,7 @@ export default function CoursesSection() {
         </div>
 
         {/* Course cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-7 max-w-3xl mx-auto">
           {courses.map((course, i) => (
             <motion.div
               key={course.id}
