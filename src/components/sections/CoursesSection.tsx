@@ -129,23 +129,14 @@ export default function CoursesSection() {
             >
               {/* Image/Video area */}
               <div className="relative aspect-[4/3] overflow-hidden">
-                {i === 0 ? (
-                  <video
-                    src="/images/course-beginner.mov"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                ) : (
-                  <div
-                    className="absolute inset-0 image-placeholder"
-                    style={{
-                      background: 'linear-gradient(135deg, #F0E8D8 0%, #E5D9C4 60%, #C9A96E 100%)',
-                    }}
-                  />
-                )}
+                <video
+                  src={i === 0 ? '/images/course-beginner.mov' : '/images/course-intermediate.mov'}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
 
                 {course.isPopular && (
                   <div className="absolute top-3 left-3">
