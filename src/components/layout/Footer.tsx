@@ -123,6 +123,14 @@ export default function Footer() {
           <p className="font-body text-xs text-pearl-700">
             Ручна робота · Індивідуальний підхід · Україна
           </p>
+          <a
+            href="https://port-murex-one.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-body text-xs text-pearl-700 hover:text-pearl-400 transition-colors duration-300"
+          >
+            Розробка сайту
+          </a>
         </div>
       </div>
     </footer>
