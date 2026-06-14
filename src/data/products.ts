@@ -20,7 +20,7 @@ export const products: Product[] = [
   {
     id: 1,
     title: 'Перлова Класика',
-    description: 'Вишукана сумочка з білого перлового бісеру з ланцюжком через плече',
+    description: 'Вишукана сумочка з білих перлових намистин з ланцюжком через плече',
     image: '/images/bag-01.jpg',
     category: 'Клатчі',
     aspectRatio: 'tall',
@@ -39,7 +39,7 @@ export const products: Product[] = [
   {
     id: 3,
     title: 'Персиковий Захід',
-    description: 'Ніжна сумочка з персикового бісеру з золотою застібкою',
+    description: 'Ніжна сумочка з персикових намистин з золотою застібкою',
     image: '/images/bag-03.jpg',
     category: 'Клатчі',
     aspectRatio: 'tall',
@@ -57,7 +57,7 @@ export const products: Product[] = [
   {
     id: 5,
     title: 'Білосніжна',
-    description: 'Маленька сумочка з білого бісеру з декором у вигляді метелика',
+    description: 'Маленька сумочка з білих намистин з декором у вигляді метелика',
     image: '/images/bag-05.jpg',
     category: 'Мінібеги',
     aspectRatio: 'tall',

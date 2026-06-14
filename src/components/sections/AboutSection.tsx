@@ -103,7 +103,7 @@ export default function AboutSection() {
             >
               <p className="font-body text-pearl-700 leading-relaxed text-base md:text-lg font-light">
                 Pearl Boutique — це простір, де кожна намистина стає частиною унікальної
-                історії. Ми створюємо сумки, клатчі та аксесуари з бісеру, вкладаючи
+                історії. Ми створюємо сумки, клатчі та аксесуари з намистин, вкладаючи
                 в кожен виріб майстерність і любов до деталей.
               </p>
               <p className="font-body text-pearl-600 leading-relaxed text-base font-light">
