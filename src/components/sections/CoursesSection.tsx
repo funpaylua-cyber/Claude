@@ -128,7 +128,7 @@ export default function CoursesSection() {
               className="group relative flex flex-col rounded-2xl bg-white border border-pearl-200/60 overflow-hidden hover-lift shadow-pearl"
             >
               {/* Image/Video area */}
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[3/4] overflow-hidden">
                 <video
                   src={i === 0 ? '/images/course-beginner.mov' : '/images/course-intermediate.mov'}
                   autoPlay
